@@ -1,6 +1,6 @@
 {
 	"name": "sql-param-chunk",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Split rows and IN-list values into chunks that stay under each database's bound-parameter limit (D1, SQLite, Postgres, MySQL, SQL Server). Works with any driver or ORM",
 	"license": "MIT",
 	"author": "Ankur Dubey (https://github.com/RagedPanda)",
