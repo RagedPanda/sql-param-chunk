@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-13
+
 ### Added
 
 - `chunkRows(rows, options)`, which splits rows into the fewest chunks whose multi-row insert stays under the bound-parameter limit, sized by the distinct columns across all rows, so rows with different keys can't overflow a chunk.
@@ -17,4 +19,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `ChunkRunError`, which says which chunk failed and how many rows went in before it, so a non-transactional run can resume, and `RowTooLargeError` when one row doesn't fit on its own.
 - ESM and CommonJS builds, each with its own types.
 
-[Unreleased]: https://github.com/RagedPanda/sql-param-chunk/commits/main
+[Unreleased]: https://github.com/RagedPanda/sql-param-chunk/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/RagedPanda/sql-param-chunk/releases/tag/v0.1.0
